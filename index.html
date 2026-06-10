@@ -185,11 +185,9 @@
     
     const birdImg = new Image();
     const pipeImg = new Image();
-    birdImg.crossOrigin = "anonymous";
-    pipeImg.crossOrigin = "anonymous";
     
-    birdImg.src = localStorage.getItem('customBird') || DEFAULT_BIRD_URL;
-    pipeImg.src = localStorage.getItem('customPipe') || DEFAULT_PIPE_URL;
+    birdImg.src = DEFAULT_BIRD_URL;
+    pipeImg.src = DEFAULT_PIPE_URL;
     
     // Game State
     let gameState = 'START'; 
